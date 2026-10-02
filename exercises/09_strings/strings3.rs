@@ -3,7 +3,7 @@ fn trim_me(input: &str) -> &str {
 }
 
 fn compose_me(input: &str) -> String {
-    format!("{input} world!")
+    input.to_owned() + " world!"
 }
 
 fn replace_me(input: &str) -> String {
